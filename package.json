@@ -1,0 +1,24 @@
+{
+  "name": "movie-search-app",
+  "version": "1.0.0",
+  "description": "A simple APP intended to search and retrieve information about movies.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dspcosta/movie-search-app.git"
+  },
+  "keywords": [
+    "movie",
+    "title",
+    "description"
+  ],
+  "author": "Daniel Costa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dspcosta/movie-search-app/issues"
+  },
+  "homepage": "https://github.com/dspcosta/movie-search-app#readme"
+}
