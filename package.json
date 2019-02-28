@@ -20,5 +20,10 @@
   "bugs": {
     "url": "https://github.com/dspcosta/movie-search-app/issues"
   },
-  "homepage": "https://github.com/dspcosta/movie-search-app#readme"
+  "homepage": "https://github.com/dspcosta/movie-search-app#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "request": "^2.88.0"
+  }
 }

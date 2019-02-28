@@ -1,0 +1,17 @@
+<h1>Results for your search:</h1>
+
+<ul>
+    <% if(result["Search"] === undefined || result["Search"] === null){ %>
+        <h1>I'm sorry, there's no result for this word! :(</h1>
+             
+    <% }else{
+            result["Search"].forEach(function(element){ %>
+    
+            <li><%=element["Title"]%> - <%= element["Year"] %></li>
+         
+    
+    <% })} %>
+    
+</ul>
+
+<a href="/search">Try another keyword!</a>
