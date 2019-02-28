@@ -86,3 +86,8 @@ footer{
      transform: translateX(-50%);
     
 }
+
+img{
+    height: 446px;
+    width: 300px;
+}
