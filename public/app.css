@@ -71,3 +71,18 @@ footer{
     border-top: solid 1px;
     
 }
+
+.result-list, .result-button{
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.result-button {
+    margin-top: 3rem;
+}
+
+.error{
+     margin-left: 50%;
+     transform: translateX(-50%);
+    
+}
