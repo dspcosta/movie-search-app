@@ -1,0 +1,73 @@
+body{
+    background-color: black;
+    color: white;
+    
+    
+}
+
+.main-title {
+    text-align: center;
+    margin-bottom: 5rem;
+    margin-top: 3rem;
+}
+
+.home-section{
+    text-align: center;
+}
+
+.home-section a{
+    margin-top: 3rem;
+}
+
+.home-title {
+    border: solid 2px;
+    padding: 1rem;
+    width: 50rem;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+h1{
+    font-size: 1.5rem;
+}
+
+.btn-secundary{
+    color: black;
+    background-color: white;
+}
+
+.btn-secundary a:link{
+    color: black;
+    text-decoration: none;
+}
+
+.btn-secundary:hover{
+    background-color: gray;
+}
+
+.form-search{
+    margin-left: 50%;
+    transform: translateX(-35%);
+    margin-bottom: 8rem;
+}
+
+.form-search input{
+    width: 20rem;
+}
+
+.back-home {
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+footer{
+    
+    width: 100%;
+    text-align: right;
+    margin-top: 17rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    border-top: solid 1px;
+    
+}

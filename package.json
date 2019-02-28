@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/dspcosta/movie-search-app#readme",
   "dependencies": {
+    "bootstrap": "^4.3.1",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
     "request": "^2.88.0"

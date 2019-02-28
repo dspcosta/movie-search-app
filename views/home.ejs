@@ -1,4 +1,13 @@
-<h1>Welcome to the Movie Search APP!</h1>
-<p>You can search for keywords or movie titles! Feel free to try it at will :)</p>
 
-<button type="submit"><a href="/search">Start your search!</a></button>
+<% include partials/header.ejs %>
+    
+    <div class="container">
+        <h1 class= "main-title home-title"> Welcome to the Movie Search APP! </h1>
+        <section class="home-section"> 
+            <p>You can search for keywords or movie titles! Feel free to try it at will :)</p>
+            
+            <a href="/search" class="btn btn-secundary btn-lg" role="button">Start your search!</a>
+        </section>
+    </div>
+    
+<% include partials/footer.ejs%>    

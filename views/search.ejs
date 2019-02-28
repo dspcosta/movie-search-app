@@ -1,11 +1,23 @@
-<h1>Search the title you want below: </h1>
+
+<% include partials/header.ejs %>
+
+<div class = "container">
+    
+    <h1 class="main-title home-title">Search the title you want below: </h1>
+    
+    <div class="form-search">
+        <form class="input-group mb-3" action = "/results" method = "GET">
+            <input  type="text" placeholder = "search movie keyword"name = "search" aria-describedby="basic-addon2"  aria-label= "search movie keyword"  >
+            <div class="input-group-append">
+                <button id="basic-addon2" class = "btn btn-secundary input-group-text">Submit</button>
+            </div>
+        </form>
+    </div>
+    
+    
+    <a class = " back-home btn btn-secundary btn-lg" role = "button" href="/">Back to Home</a>
+</div>
 
 
-<form action = "/results" method = "GET">
-    <input placeholder = "search movie keyword" name = "search">
-    <button>Submit</button>
-</form>
-
-
-<button><a href="/">Back to Home</a></button>
+<% include partials/footer.ejs %>
 

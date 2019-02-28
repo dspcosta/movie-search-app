@@ -3,7 +3,9 @@ const app = express();
 const request = require("request");
 app.set("view engine", "ejs");
 
-//app.use(express.static("public"));
+app.use(express.static("public"));
+app.use(express.static("node_modules/bootstrap/dist/css"));
+
 
 
 app.get("/", function(req, res){
