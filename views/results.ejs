@@ -1,23 +1,31 @@
 
 <% include partials/header.ejs %>
 
-<h1>Results for your search:</h1>
+<div class = "container">    
 
-<ul>
-    <% if(result["Search"] === undefined || result["Search"] === null){ %>
-        <h1>I'm sorry, there's no result for this word! :(</h1>
+    <h1 class= "main-title home-title">Results for your search:</h1>
+    
+    <div class = "row">
+        <% if(result["Search"] === undefined || result["Search"] === null){ %>
+            <h1 class="error">I'm sorry, there's no result for this word! :(</h1>
+                 
+        <% }else{
+                result["Search"].forEach(function(element){ %>
+                <div class = "col-lg-4 col-sm-6 col-12">
+                    <figure>
+                        <img src=<%=element["Poster"]%> alt="<%=element["Title"]%>">
+                        <figcaption><%=element["Title"]%> - <%= element["Year"] %></figcaption>
+                    </figure>
+                </div>
              
-    <% }else{
-            result["Search"].forEach(function(element){ %>
+        
+        <% })} %>
+        
+    </div>
     
-            <li><%=element["Title"]%> - <%= element["Year"] %></li>
-         
-    
-    <% })} %>
-    
-</ul>
+    <a class="btn btn-secundary result-button" role = "button" href="/search">Try another keyword!</a>
 
-<a class="btn btn-secundary" role = "button" href="/search">Try another keyword!</a>
+</div>
 
 
 <% include partials/footer.ejs %>
