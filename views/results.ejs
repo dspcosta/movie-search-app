@@ -2,19 +2,25 @@
 <% include partials/header.ejs %>
 
 <div class = "container">    
-
+    
     <h1 class= "main-title home-title">Results for your search:</h1>
+    <div class="results-retry">
+        <a  href="/search">Try another keyword!</a>
+    </div>
     
     <div class = "row">
-        <% if(result["Search"] === undefined || result["Search"] === null){ %>
+        <% if(result["Search"] === undefined || result["Search"] === null || result["Search"][0]["Title"] == "Undefined"){ %>
             <h1 class="error">I'm sorry, there's no result for this word! :(</h1>
                  
         <% }else{
                 result["Search"].forEach(function(element){ %>
                 <div class = "col-lg-4 col-sm-6 col-12">
                     <figure>
-                        <img src=<%=element["Poster"]%> alt="<%=element["Title"]%>">
-                        <figcaption><%=element["Title"]%> - <%= element["Year"] %></figcaption>
+                        <a href="/results/<%=element["Title"]%>" >
+                            <img class = "image-results" src=<%=element["Poster"]%> alt="<%=element["Title"]%>">
+                            <figcaption><%=element["Title"]%> - <%= element["Year"] %></figcaption>
+                        </a>
+                             
                     </figure>
                 </div>
              
