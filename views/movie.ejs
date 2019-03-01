@@ -1,0 +1,58 @@
+
+<% include partials/header.ejs %>
+
+<div class="container">
+    
+    <% if (movieSearch["Response"] == "False" || movieSearch == null) {%>
+    
+        <h1 class="main-title home-title">I'm sorry, an error has occured! :( </h1>
+        <a class = " back-home btn btn-secundary btn-lg" role = "button" href="/">Back to Home</a>
+        
+     <% } else { %>
+
+        <h1 class = "main-title home-title"><%=movieSearch["Title"]%></h1>
+    
+        <figure class ="movie-section-image">
+            <img src=<%=movieSearch["Poster"]%> alt="<%=movieSearch["Title"]%>">
+            
+        </figure>
+            
+        <ul>
+            <% for (let key in movieSearch) {
+                if(key == "Ratings" || key =="Poster" || key =="Metascore" || key =="imdbRating" 
+                || key =="imdbVotes" || key =="imdbID" || key =="Response"){
+                   continue;
+                    
+                }else if (movieSearch.hasOwnProperty(key)) { %>
+                
+                    <li><strong><%=key%></strong>: <%=movieSearch[key]%></li>
+                    <% }
+                }
+            
+             %>
+        </ul>
+        
+        <h2>RATINGS:</h2>
+        <ul>
+            <% movieSearch["Ratings"].forEach(function(element){%>
+                <li><%=element["Source"]%>: <%= element["Value"] %></li>
+                
+               <% }); %>
+            
+        </ul>
+        
+           
+        
+        
+        <button class="btn btn-secundary result-button" role = "button" onclick="window.history.go(-1); return false;">Back to results</button>
+        
+            
+        <% } %>
+
+</div>
+
+
+
+
+<% include partials/footer.ejs %>
+
