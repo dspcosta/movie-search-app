@@ -1,7 +1,7 @@
 body{
     
     color: white;
-    background-image: linear-gradient(to top, transparent,gray 1%,black, black, black 100%);
+    background-color: black;
     font-family: 'Roboto', sans-serif;
     font-size: 1.3rem;
     
@@ -25,7 +25,7 @@ body{
 .home-title {
     
     font-family: 'Special Elite', cursive;
-    border: double 3px white;
+    border: double 3px rgb(60,145,255);
     border-radius: 5px;
     padding: 1rem;
     width: 50rem;
@@ -35,18 +35,27 @@ body{
 }
 
 .btn-secundary{
-    color: black;
-    background-color: white;
+    color: white;
+    background-color: black;
+    box-shadow: 0px 0px 20px white;
+    font-family: 'Special Elite', cursive;
+    border: double 3px rgb(60,145,255);
 }
 
 .btn-secundary a:link{
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
 .btn-secundary:hover{
     background-color: gray;
 }
+
+.input-field{
+    border: double 5px rgb(60,145,255);  
+    background-color: #ECF1FF;
+}
+
 
 .form-search{
     margin-left: 50%;
@@ -71,7 +80,9 @@ footer{
     padding-right: 2rem;
     padding-top: 1rem;
     padding-bottom: 2rem;
-    border-top: solid 1px;
+    border-top: solid 1px rgb(60,145,255);
+    color: rgb(60,145,255);
+    
     
 }
 
@@ -82,13 +93,14 @@ footer{
 
 .result-button {
     margin-top: 3rem;
+    font-size: 1.3rem;
 }
 
 .results-retry {
     width: 193px;
     height: 24px;
-   margin-left: 50%;
-   transform: translateX(-50%);
+    margin-left: 50%;
+    transform: translateX(-50%);
     margin-bottom: 2rem;
     
 }
@@ -129,7 +141,7 @@ figure a {
 
 figure a:hover {
     text-decoration: none;
-    color: purple;
+    color: rgb(60,145,255);
     box-shadow: 0px 0px 60px white;
 }
 
