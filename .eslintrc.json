@@ -1,0 +1,36 @@
+{
+    "env": {
+        "es6": true,
+        "node": true,
+        "amd":true,
+        "commonjs": true
+    },
+    "extends": "standard",
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "rules": {
+        "consistent-return": 2,
+        "indent"           : [1, 4],
+        "no-else-return"   : 1,
+        "semi"             : [1, "always"],
+        "space-unary-ops"  : 2,
+        "quotes": ["error", "double"],
+        "space-before-blocks": ["error", "always"],
+        "space-before-function-paren": ["error", "never"],
+        "padding-line-between-statements": [
+            "error",
+            {"blankLine": "always", "prev": ["const", "let", "var"], "next": "*"},
+            {"blankLine": "any", "prev": ["const", "let", "var"], "next": ["const", "let", "var"]},
+            {"blankLine": "always", "prev": "directive", "next": "*"},
+            {"blankLine": "any", "prev": "directive", "next": "directive"}
+        ],
+        "code": 100,
+        "no-console": 0
+    }
+}
